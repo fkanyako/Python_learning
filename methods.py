@@ -1,11 +1,10 @@
 #Methods
-
-class Fighter(object):
-	"""docstring for Fighter"""
+class fighter(object):
+	"""docstring for fighter"""
 	def __init__(self, name):
 		self.name = name
 		self.health = 100
-		self.damage = 10
+		self.damage  = 10
 
 
 	def attack(self, other):
@@ -14,12 +13,16 @@ class Fighter(object):
 
 
 
-	Frank = Fighter("Frank")
-	James = Fighter("James")
 
-	print(Frank.name)
-	print(James.name)
 
-	James.attack(Frank)
+Frank = fighter("Frank")
+James = fighter("James")
 
-	print(Frank.health)
+
+print(Frank.name)
+print(James.name)
+
+James.attack(Frank)
+print(Frank.health)
+
+
