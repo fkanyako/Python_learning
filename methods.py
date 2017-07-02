@@ -9,8 +9,14 @@ class fighter(object):
 
 	def attack(self, other):
 		other.health -= self.damage
+		print("{}: attacks {}!".format(self.name, other.name))
+		print("{}: losses {} healht point!".format(other.name, self.damage))
 
 
+
+
+	def __str__(self):    #String represenation
+		return "{}: {}".format(self.name, self.health)
 
 
 
@@ -18,11 +24,10 @@ class fighter(object):
 Frank = fighter("Frank")
 James = fighter("James")
 
-
-print(Frank.name)
-print(James.name)
+print(Frank)
+print(James)
 
 James.attack(Frank)
-print(Frank.health)
+print(Frank)
 
 
