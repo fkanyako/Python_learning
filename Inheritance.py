@@ -31,14 +31,17 @@ James.attack(Frank)
 print(Frank)
 
 class Boxer(fighter):
-	pass
+	def heal(self):
+		self.health += 10
 
 
-boxer_frank = Boxer("Boxer_Frank")
+boxer_frank = Boxer("Boxer_Frank") #Inherit from fighter class
 print(boxer_frank)
 print("Health points:", boxer_frank.health)
 print("Damage points:",boxer_frank.damage)
 
 
+boxer_frank.heal()
+print("Healing power", boxer_frank)
 
 
