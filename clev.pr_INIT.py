@@ -1,3 +1,5 @@
+#First lesson on OOP python from Clever Programmer Qazi
+
 class Student(object):
 	"""docstring for Student"""
 	def __init__(self, name, grade, age):
