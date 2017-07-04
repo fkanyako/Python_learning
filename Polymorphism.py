@@ -19,7 +19,6 @@ class Cat(Animal):
 		return "MEOW MEOW"
 
 
-
 pet1 = Dog("Remy")
 print(pet1.name)
 print(pet1.talk())
