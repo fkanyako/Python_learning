@@ -3,6 +3,9 @@
     <words>
       <w>alabel</w>
       <w>blabel</w>
+      <w>clabel</w>
+      <w>padx</w>
+      <w>pady</w>
     </words>
   </dictionary>
 </component>
