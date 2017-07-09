@@ -26,6 +26,6 @@ button2 = tk.Button(window, text="False")
 button2.grid(column=1, row=1)
 
 # Adding event handlers
-window.bind("<Button-1>", doorbell)
+button.bind("<Button-1>", doorbell)
 
 window.mainloop()
