@@ -29,7 +29,7 @@ alabel.grid(column=0, row=0, padx=40, pady=5)
 blabel = tk.Label(text="Website")
 blabel.grid(column=1, row=0, padx=40, pady=5)
 
-clabel = tk.Label(text ="Facebook")
+clabel = tk.Label(text="Facebook")
 clabel.grid(column=1, row=4, padx=40, pady=5)
 
 button = tk.Button(window, text="doorbell")
