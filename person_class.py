@@ -2,6 +2,7 @@
 # create init method
 import datetime
 import tkinter as tk
+from PIL import Image, ImageTk
 
 # Create frame
 window = tk.Tk()
@@ -59,8 +60,12 @@ class Person:
         today = datetime.date.today()
         age = today.year - self.birthdate.year
         return age
-
-person = Person("Hassan", datetime.date(1992, 7, 5))
+image = Image.open('/Users/pujeh/Desktop/Python_learning/ageimage.jpg')
+image.thumbnail((200, 200), Image.ANTIALIAS)
+photo = ImageTk.PhotoImage(image)
+label_image = tk.Label(image=photo)
+label_image.grid(column=1, row=0)
+#person = Person("Hassan", datetime.date(1992, 7, 5))
 # print(Lansana.name)
 # print(Lansana.birthdate)
 # print(Lansana.age())
