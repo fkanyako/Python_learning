@@ -36,11 +36,14 @@ def calculate_age():
     print(year_entry.get())
     print(month_entry.get())
     print(day_entry.get())
-    Lansana = Person("Hassan", datetime.date(int(year_entry.get()),
+    person = Person("Hassan", datetime.date(int(year_entry.get()),
                                              int(month_entry.get()),
                                              int(day_entry.get())))
-    print(Lansana.age())
-    print("You are too young")
+    print(person.age())
+    text_answer = tk.Text(master=window,height=10, width=30)
+    text_answer.grid(column=1, row=5)
+    answer_text = "{name} is {age} years old".format(name=person.name, age=person.age())
+    text_answer.insert(tk.END, answer_text)
 
 # Adding a button
 calc_button = tk.Button(text="Calculate", command=calculate_age)
@@ -57,7 +60,7 @@ class Person:
         age = today.year - self.birthdate.year
         return age
 
-Lansana = Person("Hassan", datetime.date(1992, 7, 5))
+person = Person("Hassan", datetime.date(1992, 7, 5))
 # print(Lansana.name)
 # print(Lansana.birthdate)
 # print(Lansana.age())
